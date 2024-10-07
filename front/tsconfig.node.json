@@ -18,5 +18,5 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["line-app-web/vite.config.ts"]
+  "include": ["front/vite.config.ts"]
 }

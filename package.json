@@ -4,7 +4,7 @@
   "description": "LIFF CLI + Github Actions でメンテナンス画面を表示するサンプルです。",
   "workspaces": [
     "cdk",
-    "line-app-web"
+    "front"
   ],
   "devDependencies": {
     "@tsconfig/strictest": "^2.0.5",
