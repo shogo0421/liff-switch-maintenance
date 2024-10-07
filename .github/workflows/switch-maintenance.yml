@@ -6,7 +6,7 @@ jobs:
   update-liff-endpoint:
     runs-on: ubuntu-latest
     steps:
-      - name: liff-cli
+      - name: switch endpoint to maintenance
         run: |
           npm install -g @line/liff-cli
           echo '${{ secrets.CHANNEL_SECRET }}' | liff-cli channel add ${{ vars.CHANNEL_ID }} \
