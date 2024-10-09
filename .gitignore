@@ -25,3 +25,4 @@ dist-ssr
 
 front/tsconfig.tsbuildinfo
 front/tsconfig.node.tsbuildinfo
+.env
