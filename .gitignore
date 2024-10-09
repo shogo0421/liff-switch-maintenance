@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+front/tsconfig.tsbuildinfo
+front/tsconfig.node.tsbuildinfo

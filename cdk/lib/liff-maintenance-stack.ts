@@ -1,7 +1,7 @@
 import * as cdk from "aws-cdk-lib";
 import { Construct } from "constructs";
 
-export class CdkStack extends cdk.Stack {
+export class LiffMaintenanceStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
@@ -13,7 +13,7 @@ export class CdkStack extends cdk.Stack {
 
     const distribution = new cdk.aws_cloudfront.Distribution(
       this,
-      "WebSiteDistribution",
+      "MaintenanceWebSiteDistribution",
       {
         defaultRootObject: "index.html",
         defaultBehavior: {
