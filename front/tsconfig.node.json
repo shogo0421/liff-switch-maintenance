@@ -8,7 +8,6 @@
 
     /* Bundler mode */
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "moduleDetection": "force",
 
@@ -18,5 +17,5 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["front/vite.config.ts"]
+  "include": ["vite.config.ts"]
 }
