@@ -1,7 +1,11 @@
 name: switch maintennce
 on:
-  schedule:
-    - cron: "20 6 24 10 *"
+  push:
+    branches:
+      - main
+# on:
+#   schedule:
+#     - cron: "20 6 24 10 *"
 jobs:
   update-liff-endpoint:
     runs-on: ubuntu-latest
@@ -11,7 +15,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "22"
-          cache: npm
 
       - name: switch endpoint to app
         run: |
