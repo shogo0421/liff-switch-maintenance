@@ -1,11 +1,11 @@
 name: switch maintennce
-on:
-  push:
-    branches:
-      - main
 # on:
-#   schedule:
-#     - cron: "20 6 24 10 *"
+#   push:
+#     branches:
+#       - main
+on:
+  schedule:
+    - cron: "20 6 24 10 *"
 jobs:
   update-liff-endpoint:
     runs-on: ubuntu-latest
@@ -19,8 +19,8 @@ jobs:
       - name: switch endpoint to app
         run: |
           npm install -g @line/liff-cli
-          echo '${{ secrets.CHANNEL_SECRET }}' | liff-cli channel add ${{ vars.CHANNEL_ID }} \
-          liff-cli channel use ${{ vars.CHANNEL_ID }} \
+          echo '${{ secrets.CHANNEL_SECRET }}' | liff-cli channel add ${{ vars.CHANNEL_ID }}
+          liff-cli channel use ${{ vars.CHANNEL_ID }}
           liff-cli app update \
           --liff-id ${{ vars.LIFF_ID }} \
           --endpoint-url "https://example.com"
