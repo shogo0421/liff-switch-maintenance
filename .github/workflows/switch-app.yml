@@ -1,11 +1,8 @@
 name: switch maintennce
-# on:
-#   push:
-#     branches:
-#       - main
 on:
-  schedule:
-    - cron: "20 6 24 10 *"
+  repository_dispatch:
+    types: [siwtch-app]
+
 jobs:
   update-liff-endpoint:
     runs-on: ubuntu-latest
